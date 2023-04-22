@@ -7,9 +7,7 @@ class CarriganTires(Tires):
         self.sensors = sensors
     
     def needs_service(self):
-        for i in self.sensors:
+        for tire in self.sensors:
             if i >= 0.9:
                 return True
-            else:
-                continue
         return False

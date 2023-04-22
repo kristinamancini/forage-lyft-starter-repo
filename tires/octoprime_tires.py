@@ -7,7 +7,4 @@ class OctoprimeTires(Tires):
         self.sensors = sensors
     
     def needs_service(self):
-        if sum(self.sensors) >= 3:
-            return True
-        else:
-            return False
+        return sum(self.sensors) >= 3.0
